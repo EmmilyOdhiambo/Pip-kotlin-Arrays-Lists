@@ -6,7 +6,14 @@ fun main() {
     println(names.contentToString())
     println(calculateAvg())
 
+    var people = listOf(
+        Person("Emmily",20,5,68.7)
 
+
+
+    )
+    var newPeople = people.sortedByDescending { it.age }
+    println(newPeople)
 }
 // Create one function that is given the below array:
 //var numbers = arrayOf(32, 17,4,213,78,43,90,31,3,73,11,158,62)
@@ -19,13 +26,6 @@ fun myNumbers (){
     println(num)
     println(numbers.indexOf(158))
     println(numbers.sorted())
-
-
-//    println(calculateAvg(average))
-
-
-
-
 
 }
 //Given a list of Person objects, each with the attributes, name, age, height, and weight. Sort the list in order of descending age
